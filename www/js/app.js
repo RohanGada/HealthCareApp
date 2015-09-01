@@ -32,15 +32,33 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'AppCtrl'
     })
 
-    .state('app.doctors', {
-        url: '/doctors',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/doctors.html',
-                controller: 'DoctorsCtrl'
+    .state('app.select', {
+            url: '/doctor/select/:name',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/doctorSelect.html',
+                    controller: 'DoctorSelectCtrl'
+                }
             }
-        }
-    })
+        })
+        //    .state('app.doctor.info', {
+        //        url: '/doctor/xyz',
+        //        views: {
+        //            'menuContent': {
+        //                templateUrl: 'templates/doctorInfo.html',
+        //                controller: 'DoctorCtrl'
+        //            }
+        //        }
+        //    })
+        .state('app.specialities', {
+            url: '/doctor/specialities',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/doctorSpecialities.html',
+                    controller: 'DoctorSpecialitiesCtrl'
+                }
+            }
+        })
 
     .state('app.home', {
             url: '/home',

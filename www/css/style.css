@@ -4,11 +4,19 @@
 /* Empty. Add your own CSS if you like */
 
 .bar-balanced {
-    box-shadow: 2px 1px 15px #000000;
+    box-shadow: 2px 1px 10px #000000;
 }
 
-#sidemenu-profile-header {
+. #sidemenu-profile-header {
     color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.item .item-avatar.right img {
+    max-width: 100px;
 }
 
 

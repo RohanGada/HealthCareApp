@@ -1,0 +1,27 @@
+<ion-view view-title="Specialities">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear button-icon ion-android-search" ng-click="toggleSearchbar()" ng-hide="searchbar"></button>
+        <button class="button button-icon ion-ios-calendar-outline"></button>
+    </ion-nav-buttons>
+    <div class="bar bar-subheader bar-balanced item-input-inset" ng-show="searchbar">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input type="search" placeholder="search.everything">
+        </label>
+        <button ng-click="toggleSearchbar()" class="button button-icon button-clear">Cancel
+        </button>
+    </div>
+    <ion-content ng-class="{'has-header':!searchbar,'has-subheader':searchbar}">
+        <ion-list ng-repeat="speciality in specialities">
+            <a class="item item-avatar-right" href="#/app/doctor/select/{{speciality.type}}">
+                <img src="{{speciality.imgurl}}">
+                <h2>{{speciality.type}}</h2>
+                <p></p>
+                <p>{{speciality.job}}</p>
+
+            </a>
+        </ion-list>
+
+
+    </ion-content>
+</ion-view>

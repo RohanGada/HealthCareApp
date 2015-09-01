@@ -1,0 +1,35 @@
+<ion-view view-title="{{searchType}}s">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear button-icon ion-android-search" ng-click="toggleSearchbar()" ng-hide="searchbar"></button>
+        <button class="button button-icon ion-ios-calendar-outline"></button>
+    </ion-nav-buttons>
+    <div class="bar bar-subheader bar-balanced item-input-inset" ng-show="searchbar">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input type="search" placeholder="search.everything">
+        </label>
+        <button ng-click="toggleSearchbar()" class="button button-icon button-clear">Cancel
+        </button>
+    </div>
+    <ion-content ng-class="{'has-header':!searchbar,'has-subheader':searchbar}">
+        <ion-list>
+            <ion-item class="item item-assertive" ng-show="swipe">Swipe Left to call
+                <ion-option-button class="button button-balanced icon ion-android-call"></ion-option-button>
+            </ion-item>
+            <ion-item collection-repeat="doctor in doctordata" href="#" class="item">
+                <!--                    <img src="/img/obamahealthcare21.jpg" alt="">-->
+                <h2>{{doctor.name}}</h2>
+
+                <p>{{doctor.address}}</p>
+                <div class="row">
+                    <div class="col"><i class="icon icon ion-ios-calendar-outline">&nbsp;{{doctor.exp}} years</i></div>
+                    <div class="col"><i class="icon ion-cash">&nbsp;{{doctor.averagefee}} per visit</i></div>
+                    <div class="col"><i class="icon ion-chatboxes">&nbsp;{{doctor.reviews}} reviews</i></div>
+                </div>
+
+                <ion-option-button class="button button-balanced icon ion-android-call"></ion-option-button>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>
