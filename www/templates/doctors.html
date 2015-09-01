@@ -1,0 +1,18 @@
+<ion-view view-title="{{search.id}}">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear button-icon ion-ios-search-strong" ng-click="toggleSearchbar()" ng-hide="searchbar"></button>
+        <button class="button button-icon ion-ios-calendar-outline"></button>
+    </ion-nav-buttons>
+    <div class="bar bar-subheader bar-balanced item-input-inset" ng-show="searchbar">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input type="search" placeholder="search.everything">
+        </label>
+        <button ng-click="toggleSearchbar()" class="button button-icon button-clear ion-ios-close-empty">
+        </button>
+    </div>
+    <ion-content ng-class="{'has-header':!searchbar,'has-subheader':searchbar}">
+        Doctor in your area
+
+    </ion-content>
+</ion-view>

@@ -8,6 +8,9 @@
                 <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
                 </button>
             </ion-nav-buttons>
+            <ion-nav-buttons side="right">
+                <button class="button button-icon ion-ios-calendar-outline"></button>
+            </ion-nav-buttons>
         </ion-nav-bar>
         <ion-nav-view name="menuContent"></ion-nav-view>
     </ion-side-menu-content>
@@ -20,24 +23,44 @@
 -->
 
         <ion-content>
-            <a class="item item-thumbnail-left">
-                <img src="D:\Whatsapp\Photos\IMG-20140413-WA0001.jpg" width="100%" alt="">
-                <h2>user.name</h2>
-                <p>otherinfo</p>
+            <a id="sidemenu-profile-header" class="item item-balanced item-thumbnail-left">
+                <img src="/img/obamahealthcare21.jpg" width="100%" alt="">
+                <h2 style="color:white">user.name</h2>
+                <p>otherinfo&nbsp;(ngShow on login)</p>
             </a>
             <ion-list>
                 <ion-item menu-close ng-click="login()">
-                    Login
+                    Login&nbsp;(ngHide on login)
                 </ion-item>
-                <ion-item menu-close href="#/app/search">
-                    Search
+                <ion-item menu-close href="#/app/home">
+                    Home
                 </ion-item>
-                <ion-item menu-close href="#/app/browse">
-                    Browse
+                <ion-item menu-close href="#/app/home">
+                    Your Doctors
                 </ion-item>
-                <ion-item menu-close href="#/app/playlists">
-                    Playlists
+                <ion-item menu-close href="#/app/home">
+                    Report History
                 </ion-item>
+                <ion-item menu-close href="#/app/home">
+                    Chemist History
+                </ion-item>
+                <ion-item menu-close href="#/app/home">
+                    About Us
+                </ion-item>
+                <ion-item menu-close href="#/app/home">
+                    Log out&nbsp;(ngShow on login)
+                </ion-item>
+                <!--
+                <ion-item menu-close nav-transition="ease out" href="#/app/search">
+    Search
+</ion-item>
+<ion-item menu-close href="#/app/browse">
+    Browse
+</ion-item>
+<ion-item menu-close href="#/app/playlists">
+    Playlists
+</ion-item>
+-->
             </ion-list>
         </ion-content>
     </ion-side-menu>
