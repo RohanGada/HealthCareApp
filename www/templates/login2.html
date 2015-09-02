@@ -1,0 +1,56 @@
+<ion-view>
+    <ion-content class="imgbackground">
+        <div class="container center">
+            <form ng-submit="doLogin()">
+                <div class="list list-inset">
+                    <label class="item item-input">
+                        <span class="input-label">Username</span>
+                        <input type="text" placeholder="">
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">Password</span>
+                        <input type="password" placeholder="">
+                    </label>
+
+                </div>
+                <button class="button button-block button-positive">
+                    Sign in
+                </button>
+            </form>
+            <h6 style="color:white;text-align:center;">OR</h6>
+            <!--
+            OAuth sign in here
+            Rows: facebook twitter
+                  linkedin google
+            -->
+            <div class="row">
+                <a href="" class="col">
+                    <ion-item class="item-image">
+                        <img src="img/facebook.png" alt="">
+                    </ion-item>
+                </a>
+                <a href="" class="col">
+                    <ion-item class="item-image">
+                        <img src="img/twitter.png" alt="">
+                    </ion-item>
+                </a>
+            </div>
+            <div class="row">
+                <a href="" class="col">
+                    <ion-item class="item-image">
+                        <img src="img/linkedin.png" alt="">
+                    </ion-item>
+                </a>
+                <a href="" class="col">
+                    <ion-item class="item-image">
+                        <img src="img/google.png" alt="">
+                    </ion-item>
+                </a>
+            </div>
+            <!--Forgot password-->
+            <div class="row">
+                <a href="" class="col" style="color:white;text-align:center;"> Forgot password?</a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

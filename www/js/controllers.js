@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ionic'])
 
 .controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
 
@@ -80,7 +80,12 @@ angular.module('starter.controllers', [])
             id: 1,
             type: 'Cardiologist',
             job: 'diseases of the heart and blood vessels',
-            imgurl: '/img/cardiology.png'
+            imgurl: 'img/cardiology.png'
+        }, {
+            id: 2,
+            type: 'ENT Specialist',
+            job: 'Ear, Nose, and Throat',
+            imgurl: 'img/ent-doctors-bhopal_cropped.jpg'
         }];
     })
     .controller('DoctorSelectCtrl', function ($scope, $stateParams, $timeout) {
@@ -426,4 +431,26 @@ angular.module('starter.controllers', [])
             $scope.searchbar = $scope.searchbar === false ? true : false;
         };
     })
-    .controller('PlaylistCtrl', function ($scope, $stateParams) {});
+    .controller('LoginCtrl', function ($scope, $stateParams, $ionicNavBarDelegate) {
+        //        ionic.Platform.ready(function () {
+        //            // hide the status bar using the StatusBar plugin
+        //            StatusBar.hide();
+        //        });
+
+        $scope.setShowBar = function (showit) {
+            $ionicNavBarDelegate.showBar(showit);
+
+        };
+        $scope.setShowBar(false);
+
+    })
+    .controller('RequestChemistCtrl', function ($scope, $stateParams) {})
+    .controller('SelectAreaCtrl', function ($scope, $stateParams) {
+        $scope.areasTemp = [{
+            name: 'Sion'
+        }, {
+            name: 'Matunga'
+        }, {
+            name: 'Kurla'
+        }];
+    });

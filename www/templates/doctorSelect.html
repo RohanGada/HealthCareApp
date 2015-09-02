@@ -19,11 +19,10 @@
             <ion-item collection-repeat="doctor in doctordata" href="#" class="item">
                 <!--                    <img src="/img/obamahealthcare21.jpg" alt="">-->
                 <h2>{{doctor.name}}</h2>
-
                 <p>{{doctor.address}}</p>
                 <div class="row">
                     <div class="col"><i class="icon icon ion-ios-calendar-outline">&nbsp;{{doctor.exp}} years</i></div>
-                    <div class="col"><i class="icon ion-cash">&nbsp;{{doctor.averagefee}} per visit</i></div>
+                    <div class="col"><i class="icon ion-cash">&nbsp;{{doctor.averagefee}}/visit</i></div>
                     <div class="col"><i class="icon ion-chatboxes">&nbsp;{{doctor.reviews}} reviews</i></div>
                 </div>
 

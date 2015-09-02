@@ -3,8 +3,15 @@
 
 /* Empty. Add your own CSS if you like */
 
-.bar-balanced {
+
+/*
+    .bar-balanced {
     box-shadow: 2px 1px 10px #000000;
+}
+*/
+
+.bar-balanced {
+    background-color: transparent;
 }
 
 . #sidemenu-profile-header {
@@ -15,81 +22,19 @@ a {
     text-decoration: none;
 }
 
-.item .item-avatar.right img {
-    max-width: 100px;
+.center {
+    margin-top: 15em;
 }
 
-
-/*
-
-
-.layerZero,
-.layerOne,
-.layerTwo {
-    color: white;
-    z-index: 2;
+.imgbackground {
+    background-image: url('/img/background.png');
 }
 
-.layerZero {
-    background-color: #99aaea;
+textarea {
     width: 100%;
-    height: 30em;
-    z-index: 0;
-    position: absolute;
-    box-shadow: 2px 1px 15px #000000
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none !important;
+    border: 1px solid black;
 }
-
-.layerOne {
-    background-color: #88aaea;
-    width 100%;
-    height: 20em;
-    z-index: 3;
-    position: absolute;
-    box-shadow: 2px 1px 15px #000000
-}
-
-.layerTwo {
-    background-color: #886aea;
-    width 100%;
-    height: 10em;
-    z-index: 10;
-    position: absolute;
-    box-shadow: 2px 1px 15px #000000;
-}
-
-.layerOne .item-icon-left {
-    margin-top: 14em;
-    position: relative;
-}
-
-.layerZero .item-icon-left {
-    margin-top: 24em;
-    position: relative;
-}
-
-.bar-positive {
-    z-index: 2;
-}
-
-
-.bar-subheader {
-    z-index: 1;
-    transition: top 0.25s ease;
-}
-
-.has-subheader {
-    top: 44px;
-    .scroll {
-        padding-top: 44px;
-    }
-}
-
-.bar-subheader-slide-away {
-    .bar-subheader {
-        top: 0;
-    }
-    .has-subheader {
-        top: 44px;
-    }
-}
-*/

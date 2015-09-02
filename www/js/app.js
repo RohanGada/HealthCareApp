@@ -41,15 +41,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         })
-        //    .state('app.doctor.info', {
-        //        url: '/doctor/xyz',
-        //        views: {
-        //            'menuContent': {
-        //                templateUrl: 'templates/doctorInfo.html',
-        //                controller: 'DoctorCtrl'
-        //            }
-        //        }
-        //    })
         .state('app.specialities', {
             url: '/doctor/specialities',
             views: {
@@ -59,8 +50,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         })
-
-    .state('app.home', {
+        .state('app.login', {
+            url: '/login',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/login2.html',
+                    controller: 'LoginCtrl'
+                }
+            }
+        })
+        .state('app.home', {
             url: '/home',
             views: {
                 'menuContent': {
@@ -77,6 +76,24 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         })
+        .state('app.requestchemist', {
+            url: '/requestchemist',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/requestChemist.html',
+                    controller: 'RequestChemistCtrl'
+                }
+            }
+        })
+        .state('app.selectarea', {
+            url: '/selectarea',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/selectArea.html',
+                    controller: 'SelectAreaCtrl'
+                }
+            }
+        })
 
     .state('app.single', {
         url: '/playlists/:playlistId',
@@ -88,5 +105,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
     });
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/home');
+    $urlRouterProvider.otherwise('app/home');
 });
