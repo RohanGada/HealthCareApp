@@ -1,0 +1,13 @@
+<div class="modal image-modal transparent">
+    <ion-pane class="transparent">
+        <button class="button  button-icon" ng-click="closeImageViewer()"><i class="icon ion-ios-close-empty" style="color:white"></i></button>
+        <button class="button button-icon" style="float:right" ng-click=""><i class="icon ion-android-share-alt" style="color:white"></i></button>
+
+
+        <ion-scroll zooming="true" direction="xy" delegate-handle="zoom-pane" class="zoom-pane" min-zoom="1" scrollbar-x="false" scrollbar-y="false">
+            <img ng-src="{{report.imgurl}}" class="fullscreen-image" />
+        </ion-scroll>
+
+    </ion-pane>
+
+</div>

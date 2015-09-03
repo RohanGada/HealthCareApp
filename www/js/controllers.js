@@ -72,6 +72,7 @@ angular.module('starter.controllers', ['ionic'])
 
     })
     .controller('DoctorSpecialitiesCtrl', function ($scope, $stateParams) {
+
         $scope.searchbar = false;
         $scope.toggleSearchbar = function () {
             $scope.searchbar = $scope.searchbar === false ? true : false;
@@ -431,17 +432,18 @@ angular.module('starter.controllers', ['ionic'])
             $scope.searchbar = $scope.searchbar === false ? true : false;
         };
     })
-    .controller('LoginCtrl', function ($scope, $stateParams, $ionicNavBarDelegate) {
+    .controller('LoginCtrl', function ($scope, $stateParams) {
+        //        $rootScope.hideBar = true;
         //        ionic.Platform.ready(function () {
         //            // hide the status bar using the StatusBar plugin
         //            StatusBar.hide();
         //        });
-
-        $scope.setShowBar = function (showit) {
-            $ionicNavBarDelegate.showBar(showit);
-
-        };
-        $scope.setShowBar(false);
+        //
+        //        $scope.setShowBar = function (showit) {
+        //            $ionicNavBarDelegate.showBar(showit);
+        //
+        //        };
+        //        $scope.setShowBar(false);
 
     })
     .controller('RequestChemistCtrl', function ($scope, $stateParams) {})
@@ -453,4 +455,39 @@ angular.module('starter.controllers', ['ionic'])
         }, {
             name: 'Kurla'
         }];
+    })
+    .controller('ProfileCtrl', function ($scope, $stateParams) {
+        $scope.hideBar = true;
+    })
+    .controller('ReportViewerCtrl', function ($scope, $stateParams, $ionicModal, $timeout) {
+        $scope.report = {
+            imgurl: 'img/reportsample.png'
+        };
+        $ionicModal.fromTemplateUrl('templates/imageviewer.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.modal = modal;
+        });
+        $scope.viewImage = function () {
+            $scope.modal.show();
+        };
+        $scope.closeImageViewer = function () {
+            $scope.modal.hide();
+        };
+        //Cleanup the modal when we're done with it!
+        $scope.$on('$destroy', function () {
+            $scope.modal.remove();
+        });
+        // Execute action on hide modal
+        $scope.$on('modal.hide', function () {
+            // Execute action
+        });
+        // Execute action on remove modal
+        $scope.$on('modal.removed', function () {
+            // Execute action});
+        })
+        $scope.$on('modal.shown', function () {
+            console.log('Modal is shown!');
+        });
     });

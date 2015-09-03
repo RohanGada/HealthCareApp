@@ -1,6 +1,6 @@
 <ion-view view-title="{{searchType}}s">
     <ion-nav-buttons side="right">
-        <button class="button button-clear button-icon ion-android-search" ng-click="toggleSearchbar()" ng-hide="searchbar"></button>
+        <button class="button button-clear button-icon ion-ios-search" ng-click="toggleSearchbar()" ng-hide="searchbar"></button>
         <button class="button button-icon ion-ios-calendar-outline"></button>
     </ion-nav-buttons>
     <div class="bar bar-subheader bar-balanced item-input-inset" ng-show="searchbar">
@@ -16,7 +16,7 @@
             <ion-item class="item item-assertive" ng-show="swipe">Swipe Left to call
                 <ion-option-button class="button button-balanced icon ion-android-call"></ion-option-button>
             </ion-item>
-            <ion-item collection-repeat="doctor in doctordata" href="#" class="item">
+            <ion-item collection-repeat="doctor in doctordata" href="#/app/profile" class="item">
                 <!--                    <img src="/img/obamahealthcare21.jpg" alt="">-->
                 <h2>{{doctor.name}}</h2>
                 <p>{{doctor.address}}</p>
@@ -26,7 +26,7 @@
                     <div class="col"><i class="icon ion-chatboxes">&nbsp;{{doctor.reviews}} reviews</i></div>
                 </div>
 
-                <ion-option-button class="button button-balanced icon ion-android-call"></ion-option-button>
+                <ion-option-button class="button button-balanced icon ion-ios-telephone-outline"></ion-option-button>
             </ion-item>
         </ion-list>
 
