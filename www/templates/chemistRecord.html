@@ -1,0 +1,70 @@
+<ion-view view-title="chemist.name">
+    <ion-content>
+        <div class="list list-inset">
+            <div class="item item-divider">Purchase details</div>
+            <div class="item">
+                <b>ID :</b>
+                <div class="item-note">
+                    chemist.id
+                </div>
+            </div>
+            <div class="item">
+                <b>Date :</b>
+                <div class="item-note">
+                    chemist.date
+                </div>
+            </div>
+            <div class="item">
+                <b>Time :</b>
+                <div class="item-note">
+                    chemist.time
+                </div>
+            </div>
+            <div class="item item-divider">Prescription :</div>
+            <ul class="list">
+
+                <li class="item item-checkbox">
+                    <label class="checkbox">
+                        <input type="checkbox" ng-model="isChecked1">
+                    </label>
+                    Drug 1
+                    <div class="item-note">Q1 Rs.1</div>
+                </li>
+                <li class="item item-checkbox">
+                    <label class="checkbox">
+                        <input type="checkbox" ng-model="isChecked2">
+                    </label>
+                    Drug 2
+                    <div class="item-note">Rs.2</div>
+                </li>
+                <li class="item item-checkbox">
+                    <label class="checkbox">
+                        <input type="checkbox" ng-model="isChecked3">
+                    </label>
+                    Drug 3
+                    <div class="item-note">Rs.3</div>
+                </li>
+            </ul>
+
+            <div class="item item-divider">Chemist details</div>
+            <div class="item">
+                <b>Location:</b>
+                <div class="item-note item-text-wrap">
+                    chemist.location
+                </div>
+            </div>
+            <div class="item">
+                <b>Contact:</b>
+                <div class="item-note">
+                    chemist.contact
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+    <ion-footer-bar align-title="left" class="bar bar-positive">
+        <a class="button-icon title" href="" ng-click="viewImage()">
+            <i class="icon ion-ios-cart-outline"></i>
+        </a>
+    </ion-footer-bar>
+</ion-view>

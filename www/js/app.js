@@ -76,6 +76,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         })
+        .state('app.laboratorytypes', {
+            url: '/laboratorytypes',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/laboratoryTypes.html',
+                    controller: 'LaboratoryTypesCtrl'
+                }
+            }
+        })
         .state('app.requestchemist', {
             url: '/requestchemist',
             views: {
@@ -108,8 +117,44 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             url: '/reportviewer',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/reportviewer.html',
+                    templateUrl: 'templates/reportViewer.html',
                     controller: 'ReportViewerCtrl'
+                }
+            }
+        })
+        .state('app.reporthistory', {
+            url: '/reporthistory',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/reportHistory.html',
+                    controller: 'ReportViewerCtrl'
+                }
+            }
+        })
+        .state('app.chemisthistory', {
+            url: '/chemisthistory',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/chemistHistory.html',
+                    controller: 'ReportViewerCtrl'
+                }
+            }
+        })
+        .state('app.chemistrecord', {
+            url: '/chemistrecord',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/chemistRecord.html',
+                    controller: 'ChemistRecordCtrl'
+                }
+            }
+        })
+        .state('app.yourdoctors', {
+            url: '/yourdoctors',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/myDoctors.html',
+                    controller: 'ChemistRecordCtrl'
                 }
             }
         })

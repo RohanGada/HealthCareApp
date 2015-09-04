@@ -459,6 +459,11 @@ angular.module('starter.controllers', ['ionic'])
     .controller('ProfileCtrl', function ($scope, $stateParams) {
         $scope.hideBar = true;
     })
+    .controller('ChemistRecordCtrl', function ($scope, $stateParams) {
+        if ($scope.isChecked1 === true || $scope.isChecked2 === true || $scope.isChecked3 === true)
+            $scope.isChecked = true;
+    })
+    .controller('LaboratoryTypesCtrl', function ($scope, $stateParams) {})
     .controller('ReportViewerCtrl', function ($scope, $stateParams, $ionicModal, $timeout) {
         $scope.report = {
             imgurl: 'img/reportsample.png'

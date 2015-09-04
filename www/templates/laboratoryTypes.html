@@ -1,0 +1,32 @@
+<ion-view view-title="Laboratory types">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear button-icon ion-ios-search" ng-click="toggleSearchbar()" ng-hide="searchbar"></button>
+        <button class="button button-icon ion-ios-calendar-outline"></button>
+    </ion-nav-buttons>
+    <div class="bar bar-subheader bar-balanced item-input-inset" ng-show="searchbar">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input type="search" placeholder="search.everything">
+        </label>
+        <button ng-click="toggleSearchbar()" class="button button-icon button-clear">Cancel
+        </button>
+    </div>
+    <ion-content ng-class="{'has-header':!searchbar,'has-subheader':searchbar}">
+        <ion-list>
+            <a class="item item-avatar-right" href="#/app/doctor/select/">
+                <img src="">
+                <h2>Blood Test</h2>
+                <p></p>
+                <p>CBC,Blood Chemisty Test,Blood Culture,Lead Test</p>
+            </a>
+            <a class="item item-avatar-right" href="#/app/doctor/select/">
+                <img src="{{speciality.imgurl}}">
+                <h2>{{speciality.type}}</h2>
+                <p></p>
+                <p>{{speciality.job}}</p>
+            </a>
+        </ion-list>
+
+
+    </ion-content>
+</ion-view>
