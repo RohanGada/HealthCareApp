@@ -12,14 +12,14 @@
         </button>
     </div>
     <ion-content ng-class="{'has-header':!searchbar,'has-subheader':searchbar}">
-        <ion-list ng-repeat="speciality in specialities">
-            <a class="item item-avatar-right" href="#/app/doctor/select/{{speciality.type}}">
+        <div class="list list-inset">
+            <a ng-repeat="speciality in specialities" class="item item-avatar-right" href="#/app/doctor/select/{{speciality.type}}">
                 <img src="{{speciality.imgurl}}">
                 <h2>{{speciality.type}}</h2>
                 <p></p>
                 <p>{{speciality.job}}</p>
             </a>
-        </ion-list>
+        </div>
 
 
     </ion-content>

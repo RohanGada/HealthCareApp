@@ -444,6 +444,13 @@ angular.module('starter.controllers', ['ionic'])
         //
         //        };
         //        $scope.setShowBar(false);
+        $scope.inputType = 'password';
+        $scope.showPassword = function () {
+            $scope.inputType = 'text';
+        };
+        $scope.hidePassword = function () {
+            $scope.inputType = 'password';
+        };
 
     })
     .controller('RequestChemistCtrl', function ($scope, $stateParams) {})

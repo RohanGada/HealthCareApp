@@ -4,14 +4,12 @@
             <form ng-submit="doLogin()">
                 <div class="list list-inset">
                     <label class="item item-input">
-                        <span class="input-label">Username</span>
-                        <input type="text" placeholder="">
+                        <input type="text" placeholder="username">
                     </label>
                     <label class="item item-input">
-                        <span class="input-label">Password</span>
-                        <input type="password" placeholder="">
+                        <input type="{{inputType}}" placeholder="password">
+                        <button class="button button-icon" on-hold="showPassword()" on-release="hidePassword()"><i class="icon ion-ios-eye-outline"></i></a>
                     </label>
-
                 </div>
                 <button class="button button-block button-positive">
                     Sign in
