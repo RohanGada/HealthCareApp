@@ -54,7 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             url: '/login',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/login2.html',
+                    templateUrl: 'templates/login.html',
                     controller: 'LoginCtrl'
                 }
             }
@@ -178,5 +178,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
     });
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('app/home');
+    $urlRouterProvider.otherwise('app/login');
 });
