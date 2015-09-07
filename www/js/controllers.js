@@ -86,14 +86,15 @@ angular.module('starter.controllers', ['ionic'])
             id: 2,
             type: 'ENT Specialist',
             job: 'Ear, Nose, and Throat',
-            imgurl: 'img/ent-doctors-bhopal_cropped.jpg'
+            imgurl: 'img/ent.jpg'
         }];
     })
-    .controller('DoctorSelectCtrl', function ($scope, $stateParams, $timeout) {
+    .controller('DoctorSelectCtrl', function ($scope, $stateParams, $timeout, $ionicPopup) {
         $scope.params = $stateParams;
         $scope.searchType = $scope.params.name;
         $scope.searchbar = false;
         $scope.swipe = true;
+        //SWIPE OFF INSTRUCTION CODE 
         $scope.swipeOff = function () {
             $scope.swipe = false;
             console.log($scope.swipe);
@@ -101,9 +102,21 @@ angular.module('starter.controllers', ['ionic'])
         $timeout(function () {
             $scope.swipeOff();
         }, 2000);
-
-        console.log($scope.swipe);
-
+        //        console.log($scope.swipe);
+        //CONFIRM CALL POPUP CODE
+        $scope.showConfirmCall = function () {
+            var confirmPopup = $ionicPopup.confirm({
+                title: 'Confirm Call',
+                template: 'Are you sure you want to call clinic?'
+            });
+            confirmPopup.then(function (res) {
+                if (res) {
+                    console.log('You are sure');
+                } else {
+                    confirmPopup.close();
+                }
+            });
+        };
         $scope.doctordata = [
             {
                 "name": "TaShya B. Bridges",
@@ -470,7 +483,39 @@ angular.module('starter.controllers', ['ionic'])
         if ($scope.isChecked1 === true || $scope.isChecked2 === true || $scope.isChecked3 === true)
             $scope.isChecked = true;
     })
-    .controller('LaboratoryTypesCtrl', function ($scope, $stateParams) {})
+    .controller('LaboratoryTestTypesCtrl', function ($scope, $stateParams) {})
+    .controller('LaboratorySelectCtrl', function ($scope, $stateParams, $timeout) {
+        $scope.params = $stateParams;
+        $scope.searchType = $scope.params.name;
+        $scope.searchbar = false;
+        $scope.swipe = true;
+        //SWIPE OFF INSTRUCTION CODE 
+        $scope.swipeOff = function () {
+            $scope.swipe = false;
+            console.log($scope.swipe);
+        };
+        $timeout(function () {
+            $scope.swipeOff();
+        }, 2000);
+        //        console.log($scope.swipe);
+        //CONFIRM CALL POPUP CODE
+        $scope.showConfirmCall = function () {
+            var confirmPopup = $ionicPopup.confirm({
+                title: 'Confirm Call',
+                template: 'Are you sure you want to call clinic?'
+            });
+            confirmPopup.then(function (res) {
+                if (res) {
+                    console.log('You are sure');
+                } else {
+                    confirmPopup.close();
+                }
+            });
+        };
+        $scope.toggleSearchbar = function () {
+            $scope.searchbar = $scope.searchbar === false ? true : false;
+        };
+    })
     .controller('ReportViewerCtrl', function ($scope, $stateParams, $ionicModal, $timeout) {
         $scope.report = {
             imgurl: 'img/reportsample.png'

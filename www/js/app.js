@@ -32,8 +32,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'AppCtrl'
     })
 
-    .state('app.select', {
-            url: '/doctor/select/:name',
+    .state('app.doctorselect', {
+            url: '/doctorselect/:name',
             views: {
                 'menuContent': {
                     templateUrl: 'templates/doctorSelect.html',
@@ -41,8 +41,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         })
-        .state('app.specialities', {
-            url: '/doctor/specialities',
+        .state('app.doctorspecialities', {
+            url: '/doctorspecialities',
             views: {
                 'menuContent': {
                     templateUrl: 'templates/doctorSpecialities.html',
@@ -76,12 +76,21 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         })
-        .state('app.laboratorytypes', {
-            url: '/laboratorytypes',
+        .state('app.laboratoryselect', {
+            url: '/laboratoryselect/:name',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/laboratoryTypes.html',
-                    controller: 'LaboratoryTypesCtrl'
+                    templateUrl: 'templates/laboratorySelect.html',
+                    controller: 'LaboratorySelectCtrl'
+                }
+            }
+        })
+        .state('app.laboratorytesttype', {
+            url: '/laboratorytesttype',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/laboratoryTestType.html',
+                    controller: 'LaboratorySelectCtrl'
                 }
             }
         })
