@@ -1,0 +1,36 @@
+<ion-view view-title="Lab Test Types" class="background-pagecolor">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear button-icon ion-ios-search" ng-click="toggleSearchbar()" ng-hide="searchbar"></button>
+    </ion-nav-buttons>
+    <div class="bar bar-subheader bar-positive item-input-inset" ng-show="searchbar">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input type="search" ng-model="search" placeholder="Search">
+        </label>
+        <button ng-click="toggleSearchbar()" class="button button-icon button-clear ion-ios-close-empty">
+        </button>
+    </div>
+    <ion-content ng-class="{'has-header':!searchbar,'has-subheader':searchbar}">
+        <div class="card" ng-repeat="test in tests | filter:search">
+            <a class="item item-avatar" href="#/app/doctorselect/{{test.type}}">
+                <img src="{{test.imgurl}}">
+                <h2>{{test.type}}</h2>
+                <p>{{test.job}}</p>
+            </a>
+        </div>
+        <div class="card">
+            <a class="item item-avatar" href="#/app/laboratoryselect/BloodTest">
+                <img src="">
+                <h2>Blood Test</h2>
+                <p></p>
+                <p>CBC,Blood Chemisty Test,Blood Culture,Lead Test</p>
+            </a>
+        </div <div class="card">
+        <a class="item item-avatar" href="#/app/laboratoryselect/ENT">
+            <img src="{{speciality.imgurl}}">
+            <h2>{{speciality.type}}</h2>
+            <p></p>
+            <p>{{speciality.job}}</p>
+        </a>
+        </div </ion-content>
+</ion-view>

@@ -8,11 +8,7 @@
                 <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
                 </button>
             </ion-nav-buttons>
-            <!--
-            <ion-nav-buttons side="right">
-    <button class="button button-icon ion-ios-calendar-outline"></button>
-</ion-nav-buttons>
--->
+
         </ion-nav-bar>
         <ion-nav-view name="menuContent"></ion-nav-view>
     </ion-side-menu-content>
@@ -25,54 +21,36 @@
 -->
 
         <ion-content>
+            <!--
             <a id="sidemenu-profile-header" class="item item-positive item-thumbnail-left">
                 <img src="img/obamahealthcare21.jpg" width="100%" alt="">
                 <h2 style="color:white">user.name</h2>
                 <p>otherinfo&nbsp;(ngShow on login)</p>
             </a>
+-->
             <ion-list>
-                <!--
-                <ion-item menu-close ng-click="login()">
-                    Login&nbsp;(ngHide on login)
+                <ion-item class="side-menu-item-user" menu-close href="#/app/profile">
+                    <h5>Rohan Gada</h5>
+                    <p>gadarohan17@gmail.com</p>
                 </ion-item>
--->
-                <ion-item menu-close href="#/app/login">
-                    Test:Login
+                <ion-item class="side-menu-item" menu-close href="#/app/home">
+                    <i class="icon ln-home"></i>Home
                 </ion-item>
-                <ion-item menu-close href="#/app/home">
-                    Home
+                <ion-item class="side-menu-item" menu-close href="#/app/yourdoctors">
+                    <i class="icon ln-users2"></i>Your Doctors
                 </ion-item>
-                <ion-item menu-close href="#/app/yourdoctors">
-                    Your Doctors
+                <ion-item class="side-menu-item" menu-close href="#/app/reporthistory">
+                    <i class="icon ln-clipboard-check"></i>Report History
                 </ion-item>
-                <ion-item menu-close href="#/app/reporthistory">
-                    Report History
+                <ion-item class="side-menu-item" menu-close href="#/app/gallery">
+                    <i class="icon ln-first-aid"></i>Chemist History
                 </ion-item>
-                <ion-item menu-close href="#/app/chemisthistory">
-                    Chemist History
+                <ion-item class="side-menu-item" menu-close href="#/app/bio">
+                    <i class="icon ln-accessibility"></i>About Us
                 </ion-item>
-                <ion-item menu-close href="#/app/home">
-                    About Us
+                <ion-item class="side-menu-item" menu-close href="#">
+                    <i class="icon ln-exit"></i>Sign out
                 </ion-item>
-                <ion-item menu-close href="#/app/home">
-                    Log out&nbsp;(ngShow on login)
-                </ion-item>
-                <ion-item menu-close href="#/app/requestchemist">
-                    Test: Request Chemist
-                </ion-item>
-
-
-                <!--
-                <ion-item menu-close nav-transition="ease out" href="#/app/search">
-    Search
-</ion-item>
-<ion-item menu-close href="#/app/browse">
-    Browse
-</ion-item>
-<ion-item menu-close href="#/app/playlists">
-    Playlists
-</ion-item>
--->
             </ion-list>
         </ion-content>
     </ion-side-menu>

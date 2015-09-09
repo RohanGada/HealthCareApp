@@ -1,0 +1,15 @@
+<ion-view view-title="Chemists" class="background-pagecolor">
+    <ion-content>
+
+
+        <div class="card">
+            <div class="item item-divider location-item-divider item-positive">
+                <i class="icon ln-map-marker"></i>
+                Select Area
+            </div>
+            <a class="item item-text-wrap" ng-repeat="area in areasTemp">
+                {{area.name}}
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

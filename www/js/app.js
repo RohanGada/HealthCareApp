@@ -36,7 +36,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             url: '/doctorselect/:name',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/doctorSelect.html',
+                    templateUrl: 'templates/doctor-select.html',
                     controller: 'DoctorSelectCtrl'
                 }
             }
@@ -45,7 +45,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             url: '/doctorspecialities',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/doctorSpecialities.html',
+                    templateUrl: 'templates/doctor-specialities.html',
                     controller: 'DoctorSpecialitiesCtrl'
                 }
             }
@@ -92,11 +92,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         })
-        .state('app.laboratorytesttype', {
-            url: '/laboratorytesttype',
+        .state('app.labtesttype', {
+            url: '/labtesttype',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/laboratoryTestType.html',
+                    templateUrl: 'templates/lab-testtype.html',
                     controller: 'LaboratorySelectCtrl'
                 }
             }
@@ -114,7 +114,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             url: '/selectarea',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/selectArea.html',
+                    templateUrl: 'templates/select-area.html',
                     controller: 'SelectAreaCtrl'
                 }
             }
@@ -142,7 +142,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             url: '/reporthistory',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/reportHistory.html',
+                    templateUrl: 'templates/report-history.html',
                     controller: 'ReportViewerCtrl'
                 }
             }
@@ -169,7 +169,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             url: '/yourdoctors',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/myDoctors.html',
+                    templateUrl: 'templates/your-doctors.html',
                     controller: 'ChemistRecordCtrl'
                 }
             }
