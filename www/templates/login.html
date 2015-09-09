@@ -1,54 +1,32 @@
-<ion-view hide-nav-bar="true">
-    <ion-content class="imgbackground">
-        <div class="container center">
-            <form ng-submit="doLogin()">
-                <div class="list list-inset">
-                    <label class="item item-input">
-                        <input type="text" placeholder="username">
-                    </label>
-                    <label class="item item-input">
-                        <input type="{{inputType}}" placeholder="password">
-                        <button class="button button-icon" on-hold="showPassword()" on-release="hidePassword()"><i class="icon ion-ios-eye-outline"></i></a>
-                    </label>
-                </div>
-                <button class="button button-block button-positive">
-                    Sign in
-                </button>
-            </form>
-            <h6 style="color:white;text-align:center;">OR</h6>
-            <!--
-            OAuth sign in here
-            Rows: facebook twitter
-                  linkedin google
-            -->
-            <div class="row">
-                <a href="" class="col">
-                    <ion-item class="item-image">
-                        <img src="img/facebook.png" alt="">
-                    </ion-item>
-                </a>
-                <a href="" class="col">
-                    <ion-item class="item-image">
-                        <img src="img/twitter.png" alt="">
-                    </ion-item>
-                </a>
-            </div>
-            <div class="row">
-                <a href="" class="col">
-                    <ion-item class="item-image">
-                        <img src="img/linkedin.png" alt="">
-                    </ion-item>
-                </a>
-                <a href="" class="col">
-                    <ion-item class="item-image">
-                        <img src="img/google.png" alt="">
-                    </ion-item>
-                </a>
-            </div>
-            <!--Forgot password-->
-            <div class="row">
-                <a href="" class="col" style="color:white;text-align:center;"> Forgot password?</a>
-            </div>
+<ion-view view-title="Login">
+    <ion-nav-bar class="bar bar-clear">
+        
+    </ion-nav-bar>
+    <ion-content>
+        <div class="text-center login-cover">
+            <img src="/img/doctors_cropped.png" alt="">
         </div>
+        
+        
+            <label class="item item-form-input item-input item-floating-label">
+                <span class="input-label">Username</span>
+                <input type="text" placeholder="Username">
+            </label>
+            <label class="item item-form-input item-input item-floating-label">
+                <span class="input-label">Password</span>
+                <input type="password" placeholder="Password">
+            </label>
+            
+                <div class="text-right">Forgot password?</div>
+            <button class="button button-block button-positive" >
+                Sign in
+            </button>
+        
+        
+        <div class="text-center or">
+               <h6>-OR-</h6>
+        </div>
+        <div class="button button-block button-calm">Login with Facebook</div>
+        <div class="button button-block button-assertive">Login with Google</div>
     </ion-content>
 </ion-view>

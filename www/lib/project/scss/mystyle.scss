@@ -1,0 +1,179 @@
+$light: #fff !default;
+$stable: #3b5998 !default;
+$positive: #04d3be !default;
+$calm: #3b5998 !default;
+$balanced: #33cd5f !default;
+$energized: #ffc900 !default;
+$assertive: #d34836 !default;
+$royal: #886aea !default;
+$dark: #444 !default;
+$grey: #ababab !default;
+$background-color: #f4f4f4 !default;
+$base-color: #4a606f !default;
+$button-border-radius: 0px !default;
+$button-border-width: 0px !default;
+$bar-title-font-size: 18px !default;
+$headings-font-weight: 300 !default;
+$button-font-size: 15px !default;
+$button-height: 47px !default;
+$font-size-input: 15px !default;
+$padding-logo:75px !default;
+$button-text-size: 13px !default;
+$font-family-sans-serif:"Lato",
+"Helvetica Neue",
+"Roboto",
+"Segoe UI",
+sans-serif !default;
+$font-family-light-sans-serif:"Lato",
+"HelveticaNeue-Light",
+"Roboto-Light",
+"Segoe UI-Light";
+$font-input-size:13px !default;
+.bar.bar-light {
+    background-color: rgba(255, 255, 255, .66) !important;
+    /* or transparent, or background:none */
+}
+
+.scroll-content {
+    overflow: visible !important;
+}
+
+.background-pagecolor {
+    background-color: #f4f4f4 !important;
+}
+
+@mixin clip-path($clip) {
+    -webkit-clip-path: $clip;
+    -moz-clip-path: $clip;
+    -ms-clip-path: $clip;
+    clip-path: $clip;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.input-label {
+    font-size: 13px !important;
+    color: $grey !important;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    font-size: $font-input-size !important;
+    color: $base-color !important;
+}
+
+.bar.bar-clear .title {
+    color: $base-color !important
+}
+
+.login-cover {
+    padding-left: 75px !important;
+    padding-right: 75px !important;
+    padding-top: 55px !important;
+    padding-bottom: 65px !important;
+}
+.signup-cover {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    padding-top: 40px !important;
+    padding-bottom: 50px !important;
+}
+.text-right {
+    font-size: 13px;
+    color: $grey !important;
+    padding: 5px;   
+    margin-right: 15px;
+}
+
+.button {
+    font-size: $button-text-size !important;
+}
+
+.item {
+    display: block;
+    border-top-width: 0px;
+    border-style: solid;
+}
+.item h2{
+font-size: 14px !important;}
+.item-form-input {
+    border-top-width: 0px !important;
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+    
+}
+div.card {
+  margin: 7px;
+border-radius: 1px;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    i {
+        margin-left: 90%;
+        margin-top: 0px;
+    }
+}
+
+button.create-button{
+margin-top: 40px;
+}
+.slider p{
+position: absolute;
+    z-index: 2;
+    font-size: 100px;
+    color: white;
+}
+
+.slider .slider-slide-image {
+  > img {
+      z-index: -1;
+    width: 100%;
+  }
+}
+.slider-pager {
+
+  .slider-pager-page {
+    color: $base-color !important;
+    opacity: 0.3;
+
+    &.active {
+      
+      opacity: 1;
+    }
+  }
+}
+//.div .text-center{
+//padding: 10px;}

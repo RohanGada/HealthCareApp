@@ -1,36 +1,42 @@
-<ion-view view-title="Home">
-    <div class="bar bar-subheader bar-balanced item-input-inset">
-        <label class="item-input-wrapper">
-            <i class="icon ion-ios-search placeholder-icon"></i>
-            <input type="search" placeholder="search.everything">
-        </label>
-        <button class="button button-icon button-clear ion-ios-close-empty">
-        </button>
-    </div>
-    <ion-content class="has-subheader">
+<ion-view view-title="Home" class="background-pagecolor">
+
+    <ion-content class="has-header">
         <!--
         <ion-list>
             <ion-item class="card">HEy</ion-item>
         </ion-list>
 -->
+        <div class="full-image">
+            <ion-slide-box on-slide-changed="slideHasChanged($index)">
+                <ion-slide><img src="img/clinic/clinic1.JPG" class="full-image" alt="">
+                 </ion-slide>
+                <ion-slide><img src="img/clinic/clinic2.jpg" class="full-image" alt=""></ion-slide>
+                <ion-slide><img src="img/clinic/clinic3.jpg" class="full-image" alt=""></ion-slide>
+            </ion-slide-box>
+        </div>
 
-        <div class="list list-inset">
-            <a class="item item-avatar-right" href="#/app/doctorspecialities">
+        <div class="card" >
+            <a class="item item-avatar" href="#/app/doctorspecialities"
+>
                 <img src="img/doctors_cropped.png">
                 <h2>Doctors</h2>
-
-            </a>
-
-            <a class="item item-avatar-right" href="#/app/laboratorytesttype">
-                <img src="img/laboratories_cropped.png">
-                <h2>Laboratories</h2>
-
-            </a>
-            <a class="item item-avatar-right" href="#/app/selectarea">
-                <img src="img/chemist.jpg">
-                <h2>Chemists</h2>
-
+               <i class="icon ln-chevron-right"></i>
             </a>
         </div>
+        <div class="card" >
+           <a class="item item-avatar" href="#/app/laboratorytesttype">
+                <img src="img/laboratories_cropped.png">
+                <h2>Laboratories</h2>
+               <i class="icon ln-chevron-right"></i>
+            </a>
+        </div>
+        <div class="card" >
+            <a class="item item-avatar" href="#/app/selectarea">
+                <img src="img/chemist.jpg">
+                <h2>Chemists</h2>
+               <i class="icon ln-chevron-right"></i>
+            </a>
+        </div>
+
     </ion-content>
 </ion-view>
