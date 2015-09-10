@@ -430,7 +430,18 @@ angular.module('starter.controllers', ['ionic'])
         };
 
     })
-    .controller('RequestChemistCtrl', function ($scope, $stateParams) {})
+    .controller('RequestChemistCtrl', function ($scope, $stateParams) {
+        $scope.uploadtext="<h2>Upload prescription</h2>";
+        $scope.showpreview = false;
+        $scope.upload = function () {
+            $scope.showpreview = true;
+             $scope.uploadtext="<h2>Reupload / close preview</h2>";
+        };
+        $scope.closePreview = function () {
+            $scope.showpreview = false;
+         $scope.uploadtext="<h2>Reupload prescription.</h2>";
+        };
+    })
     .controller('SelectAreaCtrl', function ($scope, $stateParams) {
         $scope.areasTemp = [{
             name: 'Sion'
@@ -511,4 +522,45 @@ angular.module('starter.controllers', ['ionic'])
         $scope.$on('modal.shown', function () {
             console.log('Modal is shown!');
         });
+    })
+    .controller('ReportHistoryCtrl', function ($scope, $stateParams) {
+        $scope.labhistory = [{
+                name: 'RKB Diagnostic',
+                date: '30-08-2015',
+                totalcost: '1500',
+                tests: [
+                    {
+                        name: 'Blood Test',
+                        color: 'orange',
+                        cost: 500
+                    },
+                    {
+                        name: 'Urine Test',
+                        color: 'coral',
+                        cost: 300
+                    },
+                    {
+                        name: 'Ultrasound',
+                        color: 'darkseagreen',
+                        cost: 1000
+                    },
+            ]
+        },
+            {
+                name: 'Shivam Diagnostic',
+                date: '10-08-2015',
+                totalcost: '1800',
+                tests: [
+                    {
+                        name: 'Blood Test',
+                        color: 'orange',
+                        cost: 500
+                    },
+                    {
+                        name: 'CT scan',
+                        color: 'darkseagreen',
+                        cost: 1000
+                    },
+            ]
+        }]
     });

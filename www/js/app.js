@@ -105,7 +105,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             url: '/requestchemist',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/requestChemist.html',
+                    templateUrl: 'templates/request-chemist.html',
                     controller: 'RequestChemistCtrl'
                 }
             }
@@ -143,7 +143,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             views: {
                 'menuContent': {
                     templateUrl: 'templates/report-history.html',
-                    controller: 'ReportViewerCtrl'
+                    controller: 'ReportHistoryCtrl'
                 }
             }
         })
@@ -151,7 +151,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             url: '/chemisthistory',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/chemistHistory.html',
+                    templateUrl: 'templates/chemist-history.html',
                     controller: 'ReportViewerCtrl'
                 }
             }

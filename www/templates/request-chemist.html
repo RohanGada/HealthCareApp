@@ -1,0 +1,40 @@
+<ion-view view-title="Request Chemist" class="background-pagecolor">
+    <div class="bar bar-subheader bar-positive custom-subheader">
+        <div class="item item-avatar">
+            <img src="/img/chemist.jpg">
+            <h2>Shreeji Chemist</h2>
+            <p>Sion</p>
+        </div>
+    </div>
+    <ion-content class="custom-has-subheader">
+
+        <div class="card">
+            <div class="item" ng-bind-html="uploadtext">
+                {{uploadtext}}
+            </div>
+            <img class="full-image" title="chemist.imgurl" src="img/prescription.jpg" ng-show="showpreview">
+        </div>
+        <!--
+        <div class="card item-image upload-preview" >
+            
+        </div>
+-->
+        <div class="card">
+            <div class="item">
+                <h2>Comment :</h2>
+            </div>
+            <div class="item item-text-wrap">
+                <textarea placeholder="Add additional information here" rows="8" cols="3">
+                </textarea>
+            </div>
+        </div>
+        <button class="fab-upload button button-clear button-icon ion-ios-upload-outline" ng-click="upload()" ng-show="!showpreview"></button>
+        <button class="fab-upload button button-clear button-icon ion-ios-close-empty" ng-click="closePreview()" ng-show="showpreview"></button>
+
+    </ion-content>
+    <ion-footer-bar align-title="left" class="bar-positive">
+        <a class="button-icon title" href="" ng-click="viewImage()">
+            <i class="icon ion-ios-checkmark-outline"></i>
+        </a>
+    </ion-footer-bar>
+</ion-view>
