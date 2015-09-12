@@ -15,11 +15,45 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+$light: #fff !default;
+$stable: #3b5998 !default;
+$positive: #04d3be !default;
+$calm: #3b5998 !default;
+$balanced: #33cd5f !default;
+$energized: #ffc900 !default;
+$assertive: #d34836 !default;
+$royal: #886aea !default;
+$dark: #444 !default;
+$grey: #ababab !default;
+$faint-grey: #f7f7f9 !default;
+$background-color: #f4f4f4 !default;
+$base-color: #000 !default;
+$base-head-color: #000 !default;
+$base-subhead-color: #959595 !default;
+$button-border-radius: 0px !default;
+$button-border-width: 0px !default;
+$bar-title-font-size: 18px !default;
+$headings-font-weight: 300 !default;
+$button-font-size: 15px !default;
+$button-height: 47px !default;
+$font-size-input: 15px !default;
+$padding-logo:75px !default;
+$button-text-size: 13px !default;
+$icon-size: 18px !default;
+$border-color: #f5f5f5 !default;
+$font-family-sans-serif:"Lato",
+"Helvetica Neue",
+"Roboto",
+"Segoe UI",
+sans-serif !default;
+$font-family-light-sans-serif:"Lato",
+"HelveticaNeue-Light",
+"Roboto-Light",
+"Segoe UI-Light";
+$font-input-size:13px !default;
+$font-sidemenu-size:12px !default;
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
-
 // Include all of Ionic
-@import "www/lib/project/scss/mystyle.scss";
-
 @import "www/lib/ionic/scss/ionic";
-
+@import "www/lib/project/scss/mystyle.scss";

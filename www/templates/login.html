@@ -1,32 +1,33 @@
 <ion-view view-title="Login">
-    <ion-nav-bar class="bar bar-clear">
-        
+    <ion-nav-bar class="bar">
     </ion-nav-bar>
     <ion-content>
         <div class="text-center login-cover">
             <img src="/img/doctors_cropped.png" alt="">
         </div>
-        
-        
-            <label class="item item-form-input item-input item-floating-label">
-                <span class="input-label">Username</span>
-                <input type="text" placeholder="Username">
-            </label>
-            <label class="item item-form-input item-input item-floating-label">
-                <span class="input-label">Password</span>
-                <input type="password" placeholder="Password">
-            </label>
-            
-                <div class="text-right" >Forgot password?</div>
-            <button class="button button-block button-positive" >
+
+
+        <label class="item item-form-input item-input item-floating-label">
+            <span class="input-label">Username</span>
+            <input type="text" placeholder="Username">
+        </label>
+        <label class="item item-form-input item-input item-floating-label">
+            <span class="input-label">Password</span>
+            <input type="password" placeholder="Password">
+        </label>
+
+        <div class="text-right">Forgot password?</div>
+        <div class="btn-block">
+            <button class="button button-block button-positive">
                 Sign in
             </button>
-<!--        ui-sref="app.home"-->
-        
-        <div class="text-center or">
-               <h6>-OR-</h6>
+            <!--        ui-sref="app.home"-->
+
+            <div class="text-center or">
+                <h6>-OR-</h6>
+            </div>
+            <div class="button button-block button-calm">Login with Facebook</div>
+            <div class="button button-block button-assertive">Login with Google</div>
         </div>
-        <div class="button button-block button-calm">Login with Facebook</div>
-        <div class="button button-block button-assertive">Login with Google</div>
     </ion-content>
 </ion-view>
