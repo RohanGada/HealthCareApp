@@ -7849,12 +7849,11 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 
 div.card {
   margin: 7px;
-  border-radius: 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+  border-radius: 1px; }
   div.card h2.head-name {
-    margin-top: 10px; }
+    margin-top: 12px; }
   div.card i.icon.ln-chevron-right.item-note {
-    margin-top: 15px; }
+    margin-top: 16px; }
 
 .custom-subheader {
   height: auto !important;
@@ -7919,9 +7918,13 @@ button.create-button {
 .slider-pager .slider-pager-page {
   color: #fff;
   opacity: 1; }
+  .slider-pager .slider-pager-page i {
+    font-size: 12px; }
   .slider-pager .slider-pager-page.active {
     color: #04d3be;
     opacity: 1; }
+    .slider-pager .slider-pager-page.active i {
+      font-size: 16px; }
 
 h2.head-item {
   color: #000;

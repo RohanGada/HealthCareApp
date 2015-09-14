@@ -217,12 +217,12 @@ input[type="color"] {
 div.card {
     margin: 7px;
     border-radius: 1px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+//    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     h2.head-name {
-        margin-top: 10px;
+        margin-top: 12px;
     }
     i.icon.ln-chevron-right.item-note {
-        margin-top: 15px;
+        margin-top: 16px;
     }
 }
 
@@ -313,9 +313,15 @@ button.create-button {
     .slider-pager-page {
         color: $light;
         opacity: 1;
+        i {
+                font-size: 12px;
+            }
         &.active {
             color: $positive;
             opacity: 1;
+            i {
+                font-size: 16px;
+            }
         }
     }
 }
