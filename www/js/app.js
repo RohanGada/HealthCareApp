@@ -87,7 +87,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             url: '/laboratoryselect/:name',
             views: {
                 'menuContent': {
-                    templateUrl: 'templates/laboratorySelect.html',
+                    templateUrl: 'templates/laboratory-select.html',
                     controller: 'LaboratorySelectCtrl'
                 }
             }
@@ -97,7 +97,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             views: {
                 'menuContent': {
                     templateUrl: 'templates/lab-testtype.html',
-                    controller: 'LaboratorySelectCtrl'
+                    controller: 'LaboratoryTestTypesCtrl'
                 }
             }
         })
