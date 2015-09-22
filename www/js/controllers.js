@@ -193,7 +193,10 @@ angular.module('starter.controllers', ['ionic'])
         }];
 	})
 	.controller('ProfileCtrl', function ($scope, $stateParams) {
-		$scope.hideBar = true;
+		
+	})
+	.controller('LaboratoryprofileCtrl', function ($scope, $stateParams) {
+		
 	})
 	.controller('ChemistRecordCtrl', function ($scope, $stateParams) {
 		if ($scope.isChecked1 === true || $scope.isChecked2 === true || $scope.isChecked3 === true)

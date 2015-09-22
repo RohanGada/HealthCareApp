@@ -101,6 +101,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         })
+			.state('app.laboratoryprofile', {
+            url: '/laboratoryprofile',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/laboratory-profile.html',
+                    controller: 'LaboratoryprofileCtrl'
+                }
+            }
+        })
         .state('app.requestchemist', {
             url: '/requestchemist',
             views: {
