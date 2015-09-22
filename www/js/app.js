@@ -161,7 +161,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             views: {
                 'menuContent': {
                     templateUrl: 'templates/chemist-history.html',
-                    controller: 'ReportViewerCtrl'
+                    controller: 'chemisthistoryCtrl'
                 }
             }
         })

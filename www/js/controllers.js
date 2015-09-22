@@ -193,17 +193,35 @@ angular.module('starter.controllers', ['ionic'])
         }];
 	})
 	.controller('ProfileCtrl', function ($scope, $stateParams) {
-		
+
 	})
 	.controller('LaboratoryprofileCtrl', function ($scope, $stateParams) {
-		
+
+	})
+	.controller('chemisthistoryCtrl', function ($scope, $stateParams) {
+		$scope.chemist = [{
+				name: "Lifecare Diagnostics",
+				date: "11-09-2015",
+				cost: "500"
+		},
+			{
+				name: "Health Diagnostics",
+				date: "21-09-2015",
+				cost: "500"
+											},
+			{
+				name: "Suburban Diagnostics",
+				date: "01-09-2015",
+				cost: "500"
+											}
+										 ];
 	})
 	.controller('ChemistRecordCtrl', function ($scope, $stateParams) {
 		if ($scope.isChecked1 === true || $scope.isChecked2 === true || $scope.isChecked3 === true)
 			$scope.isChecked = true;
 	})
 
-	.controller('LaboratoryTestTypesCtrl', function ($scope, $stateParams) {
+.controller('LaboratoryTestTypesCtrl', function ($scope, $stateParams) {
 
 		$scope.lab = [
 			{

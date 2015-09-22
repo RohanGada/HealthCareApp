@@ -1,24 +1,15 @@
 <ion-view view-title="Chemist History" class="background-pagecolor">
-    <ion-content>
-        <div class="list">
-            <div class="card">
-                <a class="item history-item" href="#/app/chemisrecord">
-                    <div class="col-left">
-                        <h1>Lab.name</h1>
-                        <div class="item-text-wrap">
-                            <span class="    badge-assertive">0</span>
-                            <span class="    badge-assertive">0</span>
-                            <span class="    badge-assertive">0</span>
-
-                        </div>
-                    </div>
-                    <div class="col-right">
-                        <h2>1-1-1970</h2>
-
-                    </div>
-                    <h5>Rs. XXXX</h5>
-                </a>
-            </div>
-        </div>
-    </ion-content>
+	<ion-content>
+		<div class="list">
+			<div class="card">
+				<a class="item history-item" href="#/app/chemistrecord" ng-repeat="hist in chemist">
+					<div class="info">
+					<span class="item-note cont-item">{{hist.date}}</span>
+						<h2 class="head-item">{{hist.name}}</h2>
+						<span class="item-note font">₹ {{hist.cost}}</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</ion-content>
 </ion-view>

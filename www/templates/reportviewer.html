@@ -1,62 +1,68 @@
-<ion-view view-title="Lab.name">
-    <ion-content>
-        <div class="list list-inset">
-            <div class="item item-divider">Diagnostics</div>
-            <div class="item">
-                <b>Type of report :</b>
-                <div class="item-note">
-                    Lab.userreporttype
-                </div>
-            </div>
-            <div class="item">
-                <b>Date :</b>
-                <div class="item-note">
-                    Lab.userreportdate
-                </div>
-            </div>
-            <div class="item item-button-right">
-                <b> View report/Report not available</b>
-                <!--                set variable ng-show for viewreport button depending on availability of report-->
-                <button class="button button-positive" ng-click="viewImage()" ng-show="true">
-                    <i class="icon ion-ios-paper-outline"></i>
-                </button>
-            </div>
-            <div class="item">
-                <b>Tests :</b>
-                <ion-list>
-                    <ion-item>Test1
-                        <div class="item-note">Rs.1</div>
-                    </ion-item>
-                    <ion-item>Test2
-                        <div class="item-note">Rs.2</div>
-                    </ion-item>
-                    <ion-item>Test3
-                        <div class="item-note">Rs.3</div>
-                    </ion-item>
-                    <ion-item>Test4
-                        <div class="item-note">Rs.4</div>
-                    </ion-item>
-                </ion-list>
-                <ion-item>Total cost :</ion-item>
-            </div>
-            <div class="item item-divider">Lab details</div>
-            <div class="item">
-                <b>Location:</b>
-                <div class="item-note item-text-wrap">
-                    Lab.location
-                </div>
-            </div>
-            <div class="item">
-                <b>Contact:</b>
-                <div class="item-note">
-                    Lab.contact
-                </div>
-            </div>
-        </div>
-    </ion-content>
-    <ion-footer-bar align-title="left" class="bar bar-positive">
-        <a class="button-icon title" href="" ng-click="viewImage()">
-            <i class="icon ion-ios-paper-outline"></i>
-        </a>
-    </ion-footer-bar>
+<ion-view view-title="Lab name">
+	<ion-content class="background-pagecolor">
+
+		<div class="card">
+			<h2 class="head-card head-color">Diagnostics</h2>
+			<div class="item fz">
+				Type of report
+				<span class="item-note note">lab report</span>
+			</div>
+			<div class="item fz">
+				Date
+				<span class="item-note note">Report date</span>
+			</div>
+			<div class="item fz">
+				View Report
+				<span class="item-note">
+				<button class="button button-positive report" ng-click="viewImage()" ng-show="true">
+					<i class="icon ion-ios-paper-outline"></i>
+					</span>
+				</button>
+			</div>
+		</div>
+		<div class="card">
+			<h2 class="head-card head-color">Test</h2>
+			<div class="item fz">
+				Test 1
+				<span class="item-note note">Rs 100/-</span>
+			</div>
+			<div class="item fz">
+				Test 2
+				<span class="item-note note">Rs 500/-</span>
+			</div>
+			<div class="item fz">
+				Test 3
+				<span class="item-note note">Rs 800/-</span>
+			</div>
+			<div class="item fz">
+				Test 4
+				<span class="item-note note">Rs 1500/-</span>
+			</div>
+			<div class="item fz">
+				Total Cost
+				<span class="item-note note"></span>
+			</div>
+		</div>
+		<div class="card">
+			<h2 class="head-card head-color">Lab Details</h2>
+			<div class="item fz">
+				Location
+				<span class="item-note note">
+					lab location
+				</span>
+			</div>
+			<div class="item fz">
+				Contact
+				<span class="item-note note">lab contact</span>
+			</div>
+		</div>
+
+	</ion-content>
+<!--
+	<ion-footer-bar align-title="left" class="bar bar-positive">
+		<a class="button-icon title" href="" ng-click="viewImage()">
+			<i class="icon ion-ios-paper-outline"></i>
+		</a>
+	</ion-footer-bar>
+-->
 </ion-view>

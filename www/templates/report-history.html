@@ -1,27 +1,22 @@
 <ion-view view-title="Report History" class="background-pagecolor">
-    <ion-content>
-        <!--
+	<ion-content>
+		<!--
 Make an ng-class for Padding and item-positive
 -->
-        <!--    choose from either UIs-->
-        
-        <div class="card" ng-repeat="lab in labhistory">
-            <a class="item history-item">
-                <div class="col-left">
-                    <h1>{{lab.name}}</h1>
-                    <div class="item-text-wrap">
-                        <span ng-repeat="test in lab.tests" style="background-color:{{test.color}}">
-                            {{test.name}}
-                        </span>
-                    </div>
-                </div>
-                <div class="col-right">
-                    <h2>{{lab.date}}</h2>
-                    
-                </div>
-                <h5>Cost:&nbsp;Rs. {{lab.totalcost}}</h5>
-            </a>
-        </div>
-    </ion-content>
+		<!--    choose from either UIs-->
+
+		<div class="card" ng-repeat="lab in labhistory">
+			<a class="item history-item" href="#/app/reportviewer">
+				<div class="info">
+					<span class="item-note cont-item">{{lab.date}}</span>
+					<h2 class="head-item head-color">{{lab.name}}</h2>
+					<div class="item-text-wrap">
+						<span class="cont-item" ng-repeat="test in lab.tests">{{test.name}},{{test.name}},{{test.name}},</span>
+					</div>
+					<span class="cont-item item-note">₹ {{lab.totalcost}}</span>
+				</div>
+			</a>
+		</div>
+	</ion-content>
 
 </ion-view>

@@ -216,3 +216,49 @@ span.head-item {
 .head-item + .slider {
 	margin-top: 10px;
 }
+
+
+/*report viewer*/
+
+.item-note > .report {
+	min-height: 25px !important;
+	min-width: 25px !important;
+	padding: 0 7px;
+	line-height: 25px !important;
+}
+
+.item-note > .report > i::before {
+	font-size: 18px !important;
+	line-height: 25px !important;
+}
+
+.card > .head-card {
+	margin-top: 8px;
+	margin-left: 15px;
+	font-size: 15px;
+}
+
+.card .fz {
+	font-size: 14px !important;
+}
+
+.card > .item > .note {
+	font-size: 12px;
+}
+
+.font {
+	margin-top: 10px !important;
+	font-size: 12px !important;
+}
+
+li.head-item {
+	font-size: 14px !important;
+}
+
+span.cont-item {
+	font-size: 12px !important;
+}
+
+.nopdn {
+	padding: 0 !important;
+}

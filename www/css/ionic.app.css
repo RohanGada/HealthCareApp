@@ -7818,7 +7818,6 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .history-item {
   padding: 10px !important; }
   .history-item .col-left {
-    width: 60%;
     float: left; }
     .history-item .col-left h1 {
       font-size: 20px;
@@ -7829,7 +7828,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
       padding-left: 5px;
       margin: 2px; }
   .history-item .col-right {
-    width: 40%;
+
     float: right; }
     .history-item .col-right h2 {
       margin: 0px;
