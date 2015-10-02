@@ -262,3 +262,7 @@ span.cont-item {
 .nopdn {
 	padding: 0 !important;
 }
+
+.noresize {
+	resize: none;
+}

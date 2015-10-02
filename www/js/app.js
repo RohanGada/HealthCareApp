@@ -165,6 +165,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         })
+			.state('app.chemistselect', {
+            url: '/chemistselect',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/chemist-select.html',
+                    controller: 'chemistselectCtrl'
+                }
+            }
+        })
         .state('app.chemistrecord', {
             url: '/chemistrecord',
             views: {

@@ -1,0 +1,16 @@
+<ion-view view-title="Chemist Select" hide-nav-bar="false">
+	<ion-content class="background-pagecolor">
+		<a href="#/app/requestchemist">
+			<div class="list">
+				<div class="item item-avatar" ng-repeat="select in chemistselect">
+					<img ng-src="{{select.img}}" alt="Chemist Profile">
+					<h2 class="head-item">{{select.name}}</h2>
+					<p class="cont-item">{{select.locate}}</p>
+					<div class="icon-call">
+						<i class="icon ion-ios-telephone-outline"></i>
+					</div>
+				</div>
+			</div>
+		</a>
+	</ion-content>
+</ion-view>

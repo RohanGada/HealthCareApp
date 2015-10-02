@@ -198,6 +198,50 @@ angular.module('starter.controllers', ['ionic'])
 	.controller('LaboratoryprofileCtrl', function ($scope, $stateParams) {
 
 	})
+	.controller('chemistselectCtrl', function ($scope, $stateParams) {
+		$scope.chemistselect = [
+			{
+				img: "img/chemist_icon.jpg",
+				name: "New Empire Chemists",
+				locate: "Sion (West) ,Mumbai"
+	},
+			{
+				img: "img/chemist_icon.jpg",
+				name: "Noble Medicals",
+				locate: "Sion (East) ,Mumbai"
+	},
+			{
+				img: "img/chemist_icon.jpg",
+				name: "National Chemist",
+				locate: "Kurla (West) ,Mumbai"
+	},
+			{
+				img: "img/chemist_icon.jpg",
+				name: "City Chemist",
+				locate: "Vikroli (West) ,Mumbai"
+	},
+			{
+				img: "img/chemist_icon.jpg",
+				name: "Maharashtra Chemist",
+				locate: "Bhandup (East) ,Mumbai"
+	},
+			{
+				img: "img/chemist_icon.jpg",
+				name: "Helpcare Chemist",
+				locate: "Vidyavihar (East) ,Mumbai"
+			},
+			{
+				img: "img/chemsit_icon.jpg",
+				name: "Health Chemist",
+				locate: "Kanjurmarg (West) ,Mumbai"
+			},
+			{
+			img: "img/chemist_icon.jpg",
+				name: "Lifecare Chemist",
+				locate: "Ghatkopar (West) ,Mumbai"
+			}
+];
+	})
 	.controller('chemisthistoryCtrl', function ($scope, $stateParams) {
 		$scope.chemist = [{
 				name: "Lifecare Diagnostics",
@@ -213,7 +257,7 @@ angular.module('starter.controllers', ['ionic'])
 				name: "Suburban Diagnostics",
 				date: "01-09-2015",
 				cost: "500"
-											}
+			}
 										 ];
 	})
 	.controller('ChemistRecordCtrl', function ($scope, $stateParams) {
