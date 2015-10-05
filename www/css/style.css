@@ -183,7 +183,11 @@ h2.divide {
 	position: absolute;
 	top: 40%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -40%);
+	-webkit-transform: translate(-50%, -40%);
+	-moz-transition: translate(-50%, -40%);
+	-ms-transition: translate(-50%, -40%);
+	-o-transition: translate(-50%, -40%);
 	text-align: center;
 }
 
@@ -274,6 +278,11 @@ span.cont-item {
 .item-center {
 	text-align: center;
 }
+
 .left {
-text-align: left;	
+	text-align: left;
+}
+
+.mgtp {
+	margin-top: 15px !important;
 }
