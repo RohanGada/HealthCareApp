@@ -286,3 +286,7 @@ span.cont-item {
 .mgtp {
 	margin-top: 15px !important;
 }
+
+.side-menu-item > .item-content {
+	padding-left: 20px !important;
+}
