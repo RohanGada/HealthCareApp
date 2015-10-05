@@ -266,3 +266,14 @@ span.cont-item {
 .noresize {
 	resize: none;
 }
+
+.mgr {
+	margin-right: 15px !important;
+}
+
+.item-center {
+	text-align: center;
+}
+.left {
+text-align: left;	
+}

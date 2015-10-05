@@ -182,6 +182,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     controller: 'ChemistRecordCtrl'
                 }
             }
+        }) 
+			.state('app.aboutus', {
+            url: '/aboutus',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/aboutus.html',
+                    controller: 'AboutusCtrl'
+                }
+            }
         })
         .state('app.yourdoctors', {
             url: '/yourdoctors',

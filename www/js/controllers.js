@@ -231,7 +231,7 @@ angular.module('starter.controllers', ['ionic'])
 				locate: "Vidyavihar (East) ,Mumbai"
 			},
 			{
-				img: "img/chemsit_icon.jpg",
+				img: "img/chemist_icon.jpg",
 				name: "Health Chemist",
 				locate: "Kanjurmarg (West) ,Mumbai"
 			},
@@ -261,6 +261,10 @@ angular.module('starter.controllers', ['ionic'])
 										 ];
 	})
 	.controller('ChemistRecordCtrl', function ($scope, $stateParams) {
+		if ($scope.isChecked1 === true || $scope.isChecked2 === true || $scope.isChecked3 === true)
+			$scope.isChecked = true;
+	})
+	.controller('AboutusCtrl', function ($scope, $stateParams) {
 		if ($scope.isChecked1 === true || $scope.isChecked2 === true || $scope.isChecked3 === true)
 			$scope.isChecked = true;
 	})
