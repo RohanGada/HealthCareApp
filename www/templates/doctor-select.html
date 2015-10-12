@@ -1,32 +1,32 @@
 <ion-view view-title="{{searchType}}s" class="background-pagecolor">
-    <ion-nav-buttons side="right">
-        <button class="button button-clear button-icon ion-ios-search" ng-click="toggleSearchbar()" ng-hide="searchbar"></button>
-    </ion-nav-buttons>
-    <div class="bar bar-subheader bar-positive item-input-inset" ng-show="searchbar">
-        <label class="item-input-wrapper">
-            <i class="icon ion-ios-search placeholder-icon"></i>
-            <input type="search" placeholder="search.everything">
-        </label>
-        <button ng-click="toggleSearchbar()" class="button button-icon button-clear">Cancel
-        </button>
-    </div>
-    <ion-content ng-class="{'has-header':!searchbar,'has-subheader':searchbar}">
+	<ion-nav-buttons side="right">
+		<button class="button button-clear button-icon ion-ios-search" ng-click="toggleSearchbar()" ng-hide="searchbar"></button>
+	</ion-nav-buttons>
+	<div class="bar bar-subheader bar-positive item-input-inset" ng-show="searchbar">
+		<label class="item-input-wrapper">
+			<i class="icon ion-ios-search placeholder-icon"></i>
+			<input type="search" placeholder="search.everything">
+		</label>
+		<button ng-click="toggleSearchbar()" class="button button-icon button-clear">Cancel
+		</button>
+	</div>
+	<ion-content ng-class="{'has-header':!searchbar,'has-subheader':searchbar}">
 
-        <div class="list">
-            <!--                    <img src="/img/obamahealthcare21.jpg" alt="">-->
-            <a href="#/app/profile">
-                <div class="item item-avatar" ng-repeat="doctor in doctordata">
-                    <img src="img/doc.jpg" alt="">
-                    <h2 class="head-item head-color">{{doctor.name}}</h2>
-                    <p class="cont-item">{{doctor.address}}</p>
-                    <p class="cont-item">Exp: {{doctor.exp}} Yrs</p>
-                    <p class="cont-item">Price: {{doctor.averagefee}}</p>
-                    <div class="icon-call">
-                        <i class="icon ion-ios-telephone-outline"></i>
-                    </div>
-                    <!--                    <p class="doc-add">tel: 999999999</p>-->
-                </div>
-                <!--
+		<div class="list">
+			<!--                    <img src="/img/obamahealthcare21.jpg" alt="">-->
+			<a href="#/app/profile" ng-repeat="doctor in doctordata">
+				<div class="item item-avatar">
+					<img src="img/doc.jpg" alt="">
+					<h2 class="head-item head-color">{{doctor.name}}</h2>
+					<p class="cont-item">{{doctor.address}}</p>
+					<p class="cont-item">Exp: {{doctor.exp}} Yrs</p>
+					<p class="cont-item">Price: {{doctor.averagefee}}</p>
+					<div class="icon-call">
+						<i class="icon ion-ios-telephone-outline"></i>
+					</div>
+					<!--                    <p class="doc-add">tel: 8796622179</p>-->
+				</div>
+				<!--
                 <div class="row">
                     <div class="col">
                         <i class="icon ion-android-call"></i> Call
@@ -36,8 +36,8 @@
                     </div>
                 </div>
 -->
-            </a>
-        </div>
+			</a>
+		</div>
 
-    </ion-content>
+	</ion-content>
 </ion-view>

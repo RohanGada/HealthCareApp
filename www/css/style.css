@@ -290,3 +290,8 @@ span.cont-item {
 .side-menu-item > .item-content {
 	padding-left: 20px !important;
 }
+
+.cart-mgt {
+	margin-top: 5px;
+	display: block;
+}
