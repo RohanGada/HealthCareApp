@@ -434,15 +434,19 @@ p.cont-item {
 		border: none;
 	}
 	.icon-call {
-		padding:2px 6px;
+		padding: 2px 6px;
 		border: 2px solid #04d3be;
 		border-radius: 100%;
-		margin: 10px 5px 0 0;
+		margin: 10px 3px 0 0;
 		float: right;
 		position: static;
 		font-size: 16px;
-		i{
+		i {
 			font-size: 20px;
 		}
 	}
+}
+
+.color-white {
+	color: #fff;
 }

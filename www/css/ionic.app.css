@@ -8013,9 +8013,12 @@ p.cont-item {
     padding: 2px 6px;
     border: 2px solid #04d3be;
     border-radius: 100%;
-    margin: 10px 5px 0 0;
+    margin: 10px 3px 0 0;
     float: right;
     position: static;
     font-size: 16px; }
     .select .icon-call i {
       font-size: 20px; }
+
+.color-white {
+  color: #fff; }
