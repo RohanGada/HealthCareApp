@@ -8003,3 +8003,8 @@ p.cont-item {
 
 .card .item h2.divide {
   margin-bottom: 10px !important; }
+
+.content {
+  min-height: 50px;
+  padding: 25px;
+  background-color: #fff; }
