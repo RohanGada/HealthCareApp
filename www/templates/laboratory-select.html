@@ -12,16 +12,22 @@
 	</div>
 	<ion-content ng-class="{'has-header':!searchbar,'has-subheader':searchbar}">
 		<div class="list">
-			<a href="#app/laboratoryprofile">
-				<div class="item item-avatar" ng-repeat="testlab in labselect">
-					<img ng-src="{{testlab.labimg}}" alt="Testes">
-					<h2 class="head-item">{{testlab.labname}}</h2>
-					<p class="cont-item">{{testlab.labadd}}</p>
-					<div class="icon-call">
-						<i class="icon ion-ios-telephone-outline"></i>
+			<div class="select" ng-repeat="testlab in labselect">
+				<div class="row">
+					<div class="col-90">
+						<a href="#app/laboratoryprofile">
+							<div class="item item-avatar">
+								<img ng-src="{{testlab.labimg}}" alt="Testes">
+								<h2 class="head-item">{{testlab.labname}}</h2>
+								<p class="cont-item">{{testlab.labadd}}</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-10">
+						<a ng-href="tel:{{testlab.number}}" class="icon-call"><i class="icon ion-ios-telephone-outline"></i></a>
 					</div>
 				</div>
-			</a>
+			</div>
 		</div>
 	</ion-content>
 </ion-view>

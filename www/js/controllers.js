@@ -87,6 +87,7 @@ angular.module('starter.controllers', ['ionic'])
 				"address": "P.O. Box 481, 1675 Eu Road",
 				"exp": 8,
 				"averagefee": "₹ 3790",
+				"number": "8796622179",
 				"reviews": 10
 	},
 			{
@@ -94,6 +95,7 @@ angular.module('starter.controllers', ['ionic'])
 				"address": "949-8948 Lorem, St.",
 				"exp": 10,
 				"averagefee": "₹ 1000",
+				"number": "9773677677",
 				"reviews": 5
 	},
 			{
@@ -101,6 +103,7 @@ angular.module('starter.controllers', ['ionic'])
 				"address": "Ap #970-2284 Donec Rd.",
 				"exp": 11,
 				"averagefee": "₹ 3270",
+				"number": "959439004",
 				"reviews": 6
 	},
 			{
@@ -108,6 +111,7 @@ angular.module('starter.controllers', ['ionic'])
 				"address": "6932 Turpis Rd.",
 				"exp": 5,
 				"averagefee": "₹ 4470",
+				"number": "7208372744",
 				"reviews": 7
 	},
 			{
@@ -115,6 +119,7 @@ angular.module('starter.controllers', ['ionic'])
 				"address": "190-9172 Lacinia Avenue",
 				"exp": 18,
 				"averagefee": "₹ 2780",
+				"number": "8898177321",
 				"reviews": 10
 	},
 			{
@@ -122,6 +127,7 @@ angular.module('starter.controllers', ['ionic'])
 				"address": "Ap #736-918 Pretium Street",
 				"exp": 6,
 				"averagefee": "₹ 4320",
+				"number": "9029636258",
 				"reviews": 3
 	},
 			{
@@ -129,6 +135,7 @@ angular.module('starter.controllers', ['ionic'])
 				"address": "164-6769 Ligula. Rd.",
 				"exp": 24,
 				"averagefee": "₹ 1340",
+				"number": "9768254461",
 				"reviews": 2
 	},
 			{
@@ -136,6 +143,7 @@ angular.module('starter.controllers', ['ionic'])
 				"address": "624-2971 Integer Ave",
 				"exp": 20,
 				"averagefee": "₹ 1100",
+				"number": "9766369613",
 				"reviews": 7
 	},
 			{
@@ -143,6 +151,7 @@ angular.module('starter.controllers', ['ionic'])
 				"address": "486-2706 Mauris Road",
 				"exp": 10,
 				"averagefee": "₹ 4980",
+				"number": "8655568110",
 				"reviews": 2
 	}
 ];
@@ -203,42 +212,50 @@ angular.module('starter.controllers', ['ionic'])
 			{
 				img: "img/chemist_icon.jpg",
 				name: "New Empire Chemists",
-				locate: "Sion (West) ,Mumbai"
+				locate: "Sion (West) ,Mumbai",
+				number: "8796622179"
 	},
 			{
 				img: "img/chemist_icon.jpg",
 				name: "Noble Medicals",
-				locate: "Sion (East) ,Mumbai"
+				locate: "Sion (East) ,Mumbai",
+				number: "9773677677"
 	},
 			{
 				img: "img/chemist_icon.jpg",
 				name: "National Chemist",
-				locate: "Kurla (West) ,Mumbai"
+				locate: "Kurla (West) ,Mumbai",
+				number: "8796622179"
 	},
 			{
 				img: "img/chemist_icon.jpg",
 				name: "City Chemist",
-				locate: "Vikroli (West) ,Mumbai"
+				locate: "Vikroli (West) ,Mumbai",
+				number: "8796622179"
 	},
 			{
 				img: "img/chemist_icon.jpg",
 				name: "Maharashtra Chemist",
-				locate: "Bhandup (East) ,Mumbai"
+				locate: "Bhandup (East) ,Mumbai",
+				number: "8796622179"
 	},
 			{
 				img: "img/chemist_icon.jpg",
 				name: "Helpcare Chemist",
-				locate: "Vidyavihar (East) ,Mumbai"
+				locate: "Vidyavihar (East) ,Mumbai",
+				number: "8796622179"
 			},
 			{
 				img: "img/chemist_icon.jpg",
 				name: "Health Chemist",
-				locate: "Kanjurmarg (West) ,Mumbai"
+				locate: "Kanjurmarg (West) ,Mumbai",
+				number: "8796622179"
 			},
 			{
-			img: "img/chemist_icon.jpg",
+				img: "img/chemist_icon.jpg",
 				name: "Lifecare Chemist",
-				locate: "Ghatkopar (West) ,Mumbai"
+				locate: "Ghatkopar (West) ,Mumbai",
+				number: "8796622179"
 			}
 ];
 	})
@@ -320,33 +337,39 @@ angular.module('starter.controllers', ['ionic'])
 			{
 				labimg: 'img/noclinic.jpg',
 				labname: 'Suburban Diagnostics',
-				labadd: 'Andheri East, Mumbai'
+				labadd: 'Andheri East, Mumbai',
+				number: "8796622179"
 			},
 			{
 				labimg: "img/noclinic.jpg",
 				labname: "SRL Diagnostics",
-				labadd: "Malad West, Mumbai"
+				labadd: "Malad West, Mumbai",
+				number: "9773677677"
 
 				},
 			{
 				labimg: "img/noclinic.jpg",
 				labname: "Thyrocare Collection Center",
-				labadd: "Malad West, Mumbai"
-					},
+				labadd: "Malad West, Mumbai",
+				number: "9766369613"
+			},
 			{
 				labimg: "img/noclinic.jpg",
 				labname: "Life Care Diagnostics",
-				labadd: "Andheri, Mumbai"
+				labadd: "Andheri, Mumbai",
+				number: "9029636258"
 					},
 			{
 				labimg: "img/noclinic.jpg",
 				labname: "Noor Imaging Center",
-				labadd: "Jogeshwari West,Mumbai"
+				labadd: "Jogeshwari West,Mumbai",
+				number: "8796622179"
 					},
 			{
 				labimg: "img/noclinic.jpg",
 				labname: "SP Singh Diagnostics",
-				labadd: "Kurla West, Mumbai"
+				labadd: "Kurla West, Mumbai",
+				number: "8655568110"
 					}
 
 	];

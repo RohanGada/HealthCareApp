@@ -13,30 +13,25 @@
 	<ion-content ng-class="{'has-header':!searchbar,'has-subheader':searchbar}">
 
 		<div class="list">
-			<!--                    <img src="/img/obamahealthcare21.jpg" alt="">-->
-			<a href="#/app/profile" ng-repeat="doctor in doctordata">
-				<div class="item item-avatar">
-					<img src="img/doc.jpg" alt="">
-					<h2 class="head-item head-color">{{doctor.name}}</h2>
-					<p class="cont-item">{{doctor.address}}</p>
-					<p class="cont-item">Exp: {{doctor.exp}} Yrs</p>
-					<p class="cont-item">Price: {{doctor.averagefee}}</p>
-					<div class="icon-call">
-						<i class="icon ion-ios-telephone-outline"></i>
+			<div class="select" ng-repeat="doctor in doctordata">
+				<div class="row">
+					<div class="col-90">
+						<a href="#/app/profile">
+							<div class="item item-avatar">
+								<img src="img/doc.jpg" alt="Select Doctor">
+								<h2 class="head-item head-color">{{doctor.name}}</h2>
+								<p class="cont-item">{{doctor.address}}</p>
+								<p class="cont-item">Exp: {{doctor.exp}} Yrs</p>
+								<p class="cont-item">Price: {{doctor.averagefee}}</p>
+							</div>
+						</a>
 					</div>
-					<!--                    <p class="doc-add">tel: 8796622179</p>-->
+					<div class="col-10">
+						<a ng-href="tel:{{doctor.number}}" class="icon-call"><i class="icon ion-ios-telephone-outline"></i>
+							</a>
+					</div>
 				</div>
-				<!--
-                <div class="row">
-                    <div class="col">
-                        <i class="icon ion-android-call"></i> Call
-                    </div>
-                    <div class="col">
-                        {{doctor.reviews}} reviews
-                    </div>
-                </div>
--->
-			</a>
+			</div>
 		</div>
 
 	</ion-content>

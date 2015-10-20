@@ -8008,3 +8008,22 @@ p.cont-item {
   min-height: 50px;
   padding: 25px;
   background-color: #fff; }
+
+.select {
+  background-color: #fff;
+  border-bottom: 1px solid #f5f5f5; }
+  .select .item.item-avatar {
+    border: none; }
+  .select .icon-call {
+    padding: 2px 6px;
+    border: 2px solid #04d3be;
+    border-radius: 100%;
+    margin: 10px 3px 0 0;
+    float: right;
+    position: static;
+    font-size: 16px; }
+    .select .icon-call i {
+      font-size: 20px; }
+
+.color-white {
+  color: #fff; }

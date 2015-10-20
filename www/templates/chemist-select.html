@@ -1,16 +1,22 @@
 <ion-view view-title="Chemist Select" hide-nav-bar="false">
 	<ion-content class="background-pagecolor">
-		<a href="#/app/requestchemist">
-			<div class="list">
-				<div class="item item-avatar" ng-repeat="select in chemistselect">
-					<img ng-src="{{select.img}}" alt="Chemist Profile">
-					<h2 class="head-item">{{select.name}}</h2>
-					<p class="cont-item">{{select.locate}}</p>
-					<div class="icon-call">
-						<i class="icon ion-ios-telephone-outline"></i>
+		<div class="list">
+			<div class="select" ng-repeat="select in chemistselect">
+				<div class="row">
+					<div class="col-90">
+						<a href="#/app/requestchemist">
+							<div class="item item-avatar">
+								<img ng-src="{{select.img}}" alt="Chemist Profile">
+								<h2 class="head-item">{{select.name}}</h2>
+								<p class="cont-item">{{select.locate}}</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-10">
+						<a ng-href="tel:{{select.number}}" class="icon-call"><i class="icon ion-ios-telephone-outline"></i></a>
 					</div>
 				</div>
 			</div>
-		</a>
+		</div>
 	</ion-content>
 </ion-view>
